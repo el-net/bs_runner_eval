@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+  node:
+    version: 0.12.2
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+    - browserstack-runner
